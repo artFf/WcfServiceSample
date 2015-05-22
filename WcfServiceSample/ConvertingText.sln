@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertingTextWcfService", "WcfServiceTestTask\ConvertingTextWcfService.csproj", "{98C8496D-A54D-4963-A4E6-E7E508C231FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertingTextClient", "WindowsFormsApplication1\ConvertingTextClient.csproj", "{BCE0CC0C-A575-4965-BE44-D7C744A19805}"
+	ProjectSection(ProjectDependencies) = postProject
+		{98C8496D-A54D-4963-A4E6-E7E508C231FA} = {98C8496D-A54D-4963-A4E6-E7E508C231FA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertingTextLibrary", "ConvertingTextLibrary\ConvertingTextLibrary.csproj", "{F8DA1BE0-AFF5-4C94-85E0-F0B8CD86CD00}"
+	ProjectSection(ProjectDependencies) = postProject
+		{98C8496D-A54D-4963-A4E6-E7E508C231FA} = {98C8496D-A54D-4963-A4E6-E7E508C231FA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestConvertingText", "UnitTestConvertingText\UnitTestConvertingText.csproj", "{4F89A8A3-86C9-4823-AFA5-1225863B05E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98C8496D-A54D-4963-A4E6-E7E508C231FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98C8496D-A54D-4963-A4E6-E7E508C231FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98C8496D-A54D-4963-A4E6-E7E508C231FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98C8496D-A54D-4963-A4E6-E7E508C231FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCE0CC0C-A575-4965-BE44-D7C744A19805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE0CC0C-A575-4965-BE44-D7C744A19805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE0CC0C-A575-4965-BE44-D7C744A19805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE0CC0C-A575-4965-BE44-D7C744A19805}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8DA1BE0-AFF5-4C94-85E0-F0B8CD86CD00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8DA1BE0-AFF5-4C94-85E0-F0B8CD86CD00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8DA1BE0-AFF5-4C94-85E0-F0B8CD86CD00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8DA1BE0-AFF5-4C94-85E0-F0B8CD86CD00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F89A8A3-86C9-4823-AFA5-1225863B05E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F89A8A3-86C9-4823-AFA5-1225863B05E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F89A8A3-86C9-4823-AFA5-1225863B05E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F89A8A3-86C9-4823-AFA5-1225863B05E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
